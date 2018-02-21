@@ -1,6 +1,6 @@
 # CsharpProject
 #The following database must be created in Microsoft sql server for the database and the database added to data connections in the server explorer
-create database Avita;
+#create database Avita;
 use Avita;
 
 create table Users(
