@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96058F8B-B2D5-4911-933D-65FC0F49A40F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AvitaPharmacy</RootNamespace>
+    <AssemblyName>AvitaPharmacy</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvitaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvitaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvitaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvitaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvitaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvitaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvitaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvitaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvitaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvitaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvitaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvitaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvitaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvitaDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvitaDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvitaDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvitaDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvitaDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUserForm.Designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUserForm.Designer.cs">
+      <DependentUpon>DeleteUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSaleForm.Designer.cs">
+      <DependentUpon>AdminSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintPreview.Designer.cs">
+      <DependentUpon>PrintPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesReportForm.Designer.cs">
+      <DependentUpon>SalesReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SfSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SfSaleForm.Designer.cs">
+      <DependentUpon>SfSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent.Designer.cs">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMedicineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMedicineForm.Designer.cs">
+      <DependentUpon>AddMedicineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMedicineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMedicineForm.Designer.cs">
+      <DependentUpon>ViewMedicineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMedicineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMedicineForm.Designer.cs">
+      <DependentUpon>EditMedicineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteMedicineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteMedicineForm.Designer.cs">
+      <DependentUpon>DeleteMedicineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpiryDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpiryDateForm.Designer.cs">
+      <DependentUpon>ExpiryDateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUserForm.Designer.cs">
+      <DependentUpon>ViewUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="AvitaDataSet.xsc">
+      <DependentUpon>AvitaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvitaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvitaDataSet.xss">
+      <DependentUpon>AvitaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet1.xsc">
+      <DependentUpon>AvitaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvitaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvitaDataSet1.xss">
+      <DependentUpon>AvitaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet2.xsc">
+      <DependentUpon>AvitaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvitaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvitaDataSet2.xss">
+      <DependentUpon>AvitaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet3.xsc">
+      <DependentUpon>AvitaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvitaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvitaDataSet3.xss">
+      <DependentUpon>AvitaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet4.xsc">
+      <DependentUpon>AvitaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvitaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvitaDataSet4.xss">
+      <DependentUpon>AvitaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet5.xsc">
+      <DependentUpon>AvitaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvitaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvitaDataSet5.xss">
+      <DependentUpon>AvitaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet6.xsc">
+      <DependentUpon>AvitaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvitaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvitaDataSet6.xss">
+      <DependentUpon>AvitaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet7.xsc">
+      <DependentUpon>AvitaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvitaDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvitaDataSet7.xss">
+      <DependentUpon>AvitaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet8.xsc">
+      <DependentUpon>AvitaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AvitaDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvitaDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvitaDataSet8.xss">
+      <DependentUpon>AvitaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUserForm.resx">
+      <DependentUpon>DeleteUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSaleForm.resx">
+      <DependentUpon>AdminSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPreview.resx">
+      <DependentUpon>PrintPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReportForm.resx">
+      <DependentUpon>SalesReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SfSaleForm.resx">
+      <DependentUpon>SfSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent.resx">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMedicineForm.resx">
+      <DependentUpon>AddMedicineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMedicineForm.resx">
+      <DependentUpon>ViewMedicineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMedicineForm.resx">
+      <DependentUpon>EditMedicineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteMedicineForm.resx">
+      <DependentUpon>DeleteMedicineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpiryDateForm.resx">
+      <DependentUpon>ExpiryDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewUserForm.resx">
+      <DependentUpon>ViewUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pharmacy icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light-woodgrain_4460x4460.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Medicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Medicine1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medicine1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medicine2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medicine11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medicine21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Medicine2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Medicine11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MedicineModify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mod user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-Recovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %28%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\other.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48365704-medicine-vector-icon-pills-or-tablets-capsules--Stock-Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green back.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
